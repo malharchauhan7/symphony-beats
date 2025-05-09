@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url("public/images/latest-shows/background-main.png")`,
+          backgroundImage: `url("/images/background-main.png")`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
