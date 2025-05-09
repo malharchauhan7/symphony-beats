@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
+import WhatsAppButton from "./WhatsAppButton";
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -28,13 +28,21 @@ const Hero: React.FC = () => {
           We create unforgettable live music experiences
         </p>
 
-        <Button
-          className="bg-music-purple hover:bg-music-purple/90 text-white px-8 py-6 text-lg animate-fade-in flex items-center justify-center gap-2"
+        {/* <Button
+          className="bg-music-purple hover:bg-music-purple/90 "
           style={{ animationDelay: "0.4s" }}
         >
           Sponsor Us
           <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        </Button> */}
+        <WhatsAppButton
+          className="bg-music-purple hover:bg-music-purple/90 text-white  px-8 py-6 text-lg animate-fade-in flex items-center justify-center gap-2"
+          size="sm"
+          phoneNumber="9664621135"
+          message="Hey, I'm interested to sponsor your show!"
+        >
+          Sponsor Us
+        </WhatsAppButton>
       </div>
 
       {/* Scroll Down Indicator */}

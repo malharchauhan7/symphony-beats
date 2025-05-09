@@ -11,47 +11,46 @@ import {
 } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const IMAGES_DIR = "/public/images/musicians";
-
+const IMAGES_DIR = "/images/musicians";
 const musicians = [
   {
     id: 1,
     name: "",
     role: "",
-    mainImage: `/public/images/musicians/IMG_0307.jpg`,
-    gallery: [`/public/images/musicians/IMG_0307.jpg`],
+    mainImage: `/images/musicians/IMG_0307.jpg`,
+    gallery: [`/images/musicians/IMG_0307.jpg`],
     videos: ["video-id-1", "video-id-2"],
   },
   {
     id: 2,
     name: "",
     role: "",
-    mainImage: `/public/images/musicians/IMG_0311.jpg`,
-    gallery: [`/public/images/musicians/IMG_0311.jpg`],
+    mainImage: `/images/musicians/IMG_0311.jpg`,
+    gallery: [`/images/musicians/IMG_0311.jpg`],
     videos: ["video-id-1", "video-id-2"],
   },
   {
     id: 3,
     name: "",
     role: "",
-    mainImage: `/public/images/musicians/IMG_0309.jpg`,
-    gallery: [`/public/images/musicians/IMG_0309.jpg`],
+    mainImage: `/images/musicians/IMG_0309.jpg`,
+    gallery: [`/images/musicians/IMG_0309.jpg`],
     videos: ["video-id-1", "video-id-2"],
   },
   {
     id: 4,
     name: "",
     role: "",
-    mainImage: `/public/images/musicians/IMG_0310.jpg`,
-    gallery: [`/public/images/musicians/IMG_0310.jpg`],
+    mainImage: `/images/musicians/IMG_0310.jpg`,
+    gallery: [`/images/musicians/IMG_0310.jpg`],
     videos: ["video-id-1", "video-id-2"],
   },
   {
     id: 5,
     name: "",
     role: "",
-    mainImage: `/public/images/musicians/IMG_0308.jpg`,
-    gallery: [`/public/images/musicians/IMG_0308.jpg`],
+    mainImage: `/images/musicians/IMG_0308.jpg`,
+    gallery: [`/images/musicians/IMG_0308.jpg`],
     videos: ["video-id-1", "video-id-2"],
   },
 ];

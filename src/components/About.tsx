@@ -1,5 +1,5 @@
 import React from "react";
-import OrganizersImage from "../../public/images/organizers.png";
+import OrganizersImage from "/images/organizers.png";
 
 const About: React.FC = () => {
   return (

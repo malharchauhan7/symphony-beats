@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <a href="#" className="text-2xl font-bold text-white tracking-tight">
           {/* BEAT<span className="text-music-purple">LIFE</span> */}
           {Logo ? (
-            <img src={Logo} alt="Symphony Beats" className="h-16" />
+            <img src={Logo} alt="Symphony Beats" className="h-12 md:h-16 " />
           ) : (
             <div>
               Symphony<span className="text-music-purple"> Beats</span>
@@ -81,15 +81,15 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </a>
         </div>
 
-        <div className="flex gap-5">
-          <WhatsAppButton
-            className="  hover:bg-white hover:text-black text-white font-medium bg-transparent"
+        <div className=" md:flex gap-5">
+          {/* <WhatsAppButton
+            className="hover:bg-white hover:text-black text-white font-medium bg-transparent "
             phoneNumber="9664621135"
             message="Hey, I want to register in your upcoming show!"
             size="sm"
           >
             Register here
-          </WhatsAppButton>
+          </WhatsAppButton> */}
           <WhatsAppButton
             className="bg-music-purple hover:bg-music-purple/90 text-white font-medium"
             size="sm"
