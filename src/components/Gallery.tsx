@@ -87,7 +87,7 @@ const Gallery: React.FC = () => {
                 image.className
               )}
             >
-              <LazyImage
+              <img
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
