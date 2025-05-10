@@ -6,6 +6,16 @@ const showData = [
   {
     id: 1,
     title: "Upcoming Orchestra Show",
+    message: `Hey, I'm interested to register for your next show!
+
+  Name: 
+  No. of Songs: 
+  Song Names: 
+
+  Show Details:
+  Date: May 24, 2025
+  Time: 8:00 PM
+  Location: Ahmedabad`,
     date: {
       display: "May 24, 2025",
       icon: "CalendarDays",
@@ -58,7 +68,7 @@ const UpcomingShow: React.FC = () => {
                 <WhatsAppButton
                   className={show.button.className}
                   phoneNumber="9664621135"
-                  message="Hey, I'm interested in your service!"
+                  message={show.message}
                 >
                   {show.button.text}
                 </WhatsAppButton>
