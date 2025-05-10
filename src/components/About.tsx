@@ -1,5 +1,7 @@
 import React from "react";
-import OrganizersImage from "/images/organizers.png";
+
+const OrganizersImage =
+  "https://ik.imagekit.io/zh57cbpyz/images/organizers_Y2lLV3Q0Cs.png?updatedAt=1746886131466";
 
 const About: React.FC = () => {
   return (

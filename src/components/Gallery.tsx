@@ -1,69 +1,64 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-// import BackgroundImage from "../../public/images/background-main.png";
-// import StutiImage from "../../public/images/Latest Shows/stuti.png";
-// import SingerPerforming from "../../public/images/Latest Shows/singerperforming.png";
-
-const IMAGES_DIR = "/images/latest-shows";
 
 const galleryImages = [
   {
     id: 1,
-    src: `${IMAGES_DIR}/background-main.png`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/background-main_5uj05CyOu.png?updatedAt=1746886135372`,
     alt: "",
     className: "col-span-1 md:col-span-2 row-span-1",
   },
   {
     id: 2,
-    src: `${IMAGES_DIR}/stuti.png`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/stuti_tOpQkH-DF.png?updatedAt=1746886136179`,
     alt: "Started with ganesh stuti",
     className: "col-span-1 row-span-1",
   },
   {
     id: 3,
-    src: `${IMAGES_DIR}/singerperforming.png`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/singerperforming_TFdfI8mao.png?updatedAt=1746886137090`,
     alt: "Singer performing on stage",
     className: "col-span-1 row-span-1",
   },
   {
     id: 4,
-    src: `${IMAGES_DIR}/audience.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/audience_Jft1xHNJ9z.jpg?updatedAt=1746886131231`,
     alt: "200+ Audience",
     className: "col-span-1 md:col-span-1 row-span-1",
   },
   {
     id: 5,
-    src: `${IMAGES_DIR}/sponser.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/sponser_4o0E46SvC.jpg?updatedAt=1746886136719`,
     alt: "Show sponser Mahendra Verma",
     className: "col-span-1 row-span-1",
   },
   {
     id: 7,
-    src: `${IMAGES_DIR}/backstage.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/backstage_gvWuHSShJ.jpg?updatedAt=1746886135197`,
     alt: "Back stage masti",
     className: "col-span-1 row-span-1",
   },
   {
     id: 8,
-    src: `${IMAGES_DIR}/musicians.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/musicians_1FLKTJyvde.jpg?updatedAt=1746886135546`,
     alt: "The heartbeat of our show",
     className: "col-span-1 row-span-1",
   },
   {
     id: 9,
-    src: `${IMAGES_DIR}/anchor.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/anchor_hdXePst6N.jpg?updatedAt=1746886131133`,
     alt: "The voice that guides the show",
     className: "col-span-1 row-span-1",
   },
   {
     id: 10,
-    src: `${IMAGES_DIR}/fullteam.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/fullteam_EpUVU_EymX.jpg?updatedAt=1746886135369`,
     alt: "Voices that bring the stage to life",
     className: "col-span-2 row-span-1",
   },
   {
     id: 10,
-    src: `${IMAGES_DIR}/garba.jpg`,
+    src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/garba_gucjYQVGfv.jpg?updatedAt=1746886135707`,
     alt: "No celebration is complete without Garba!",
     className: "col-span-1 row-span-1",
   },

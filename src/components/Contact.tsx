@@ -7,10 +7,10 @@ import { Mail, Phone, MessageSquare } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact: React.FC = () => {
-  const [state, handleSubmit] = useForm("xkgrzrzp");
+  const [state, handleSubmit] = useForm("manobzqw");
 
   if (state.succeeded) {
-    toast.success("Thanks for your message! We'll get back to you soon.");
+    toast.success("Thanks for your message! We'll contact to you soon.");
   }
 
   return (
@@ -115,6 +115,21 @@ const Contact: React.FC = () => {
                     className="bg-music-dark border-gray-700 focus:border-music-purple"
                   />
                 </div>
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="mobile" className="text-gray-300 block">
+                  Mobile Number
+                </label>
+                <Input
+                  id="mobile"
+                  name="mobile"
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  required
+                  placeholder="Your mobile number"
+                  className="bg-music-dark border-gray-700 focus:border-music-purple"
+                />
               </div>
 
               <div className="space-y-2">

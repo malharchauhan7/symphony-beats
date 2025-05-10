@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Logo from "../../public/images/Logo-1-nobg.png";
 import WhatsAppButton from "./WhatsAppButton";
 
 interface NavbarProps {
   className?: string;
 }
+
+const Logo =
+  "https://ik.imagekit.io/zh57cbpyz/images/Logo-1-nobg_ZTjfuandY.png?updatedAt=1746886125402";
 
 const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <a href="#" className="text-2xl font-bold text-white tracking-tight">
           {/* BEAT<span className="text-music-purple">LIFE</span> */}
           {Logo ? (
-            <img src={Logo} alt="Symphony Beats" className="h-12 md:h-16 " />
+            <img src={Logo} className="h-12 md:h-16 " />
           ) : (
             <div>
               Symphony<span className="text-music-purple"> Beats</span>

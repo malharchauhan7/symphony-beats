@@ -10,7 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-const IMAGES_DIR = "/images/latest-shows";
+import { Link } from "react-router-dom";
 
 const showcaseEvents = [
   {
@@ -18,18 +18,18 @@ const showcaseEvents = [
     title: "Mega Orchestra Show",
     date: "May 3, 2025",
     location: "Gujarat Sahitya Parisad Hall, Ahmedabad",
-    image: `${IMAGES_DIR}/background-main.png`,
+    image: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/background-main_5uj05CyOu.png?updatedAt=1746886135372`,
     description:
       "Mega Orchestra Show with 12+ singers and 200+ audience—an unforgettable night of music and energy!",
     gallery: [
-      `${IMAGES_DIR}/background-main.png`,
-      `${IMAGES_DIR}/audience.jpg`,
-      `${IMAGES_DIR}/sponser.jpg`,
-      `${IMAGES_DIR}/musicians.jpg`,
-      `${IMAGES_DIR}/fullteam.jpg`,
-      `${IMAGES_DIR}/garba.jpg`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/background-main_5uj05CyOu.png?updatedAt=1746886135372`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/audience_Jft1xHNJ9z.jpg?updatedAt=1746886131231`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/sponser_4o0E46SvC.jpg?updatedAt=1746886136719`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/musicians_1FLKTJyvde.jpg?updatedAt=1746886135546`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/fullteam_EpUVU_EymX.jpg?updatedAt=1746886135369`,
+      `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/garba_gucjYQVGfv.jpg?updatedAt=1746886135707`,
     ],
-    videos: ["", ""],
+    videos: [""],
   },
   // {
   //   id: 2,
@@ -77,7 +77,7 @@ const Showcase: React.FC = () => {
 
   const handleOpenGallery = (eventId: number) => {
     setOpenGallery(eventId);
-    setActiveTab("images"); // Reset to images tab when opening
+    setActiveTab("images");
   };
 
   const handleCloseGallery = () => {
@@ -134,10 +134,12 @@ const Showcase: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-[#FE3598] hover:bg-[#FE3598]/90 text-white inline-flex items-center">
-            View All Shows
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/all-shows">
+            <Button className="bg-[#FE3598] hover:bg-[#FE3598]/90 text-white inline-flex items-center">
+              View All Shows
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
 

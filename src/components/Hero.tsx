@@ -2,14 +2,31 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import WhatsAppButton from "./WhatsAppButton";
+
+const Background_Desktop =
+  "https://ik.imagekit.io/zh57cbpyz/images/latest-shows/background-main_5uj05CyOu.png?updatedAt=1746886135372";
+
+const Background_Mobile =
+  "https://ik.imagekit.io/zh57cbpyz/images/latest-shows/background-mobile.png?updatedAt=1746887095712";
+
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-cover bg-center hidden md:block"
         style={{
-          backgroundImage: `url("/images/background-main.png")`,
+          backgroundImage: `url(${Background_Desktop})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
+      </div>
+
+      {/* Mobile Background */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center block md:hidden"
+        style={{
+          backgroundImage: `url(${Background_Mobile})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
@@ -28,13 +45,6 @@ const Hero: React.FC = () => {
           We create unforgettable live music experiences
         </p>
 
-        {/* <Button
-          className="bg-music-purple hover:bg-music-purple/90 "
-          style={{ animationDelay: "0.4s" }}
-        >
-          Sponsor Us
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button> */}
         <WhatsAppButton
           className="bg-music-purple hover:bg-music-purple/90 text-white  px-8 py-6 text-lg animate-fade-in flex items-center justify-center gap-2"
           size="sm"
@@ -46,7 +56,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce ">
+
+      <div className="absolute bottom-10 left-0 right-0 mx-auto w-fit flex flex-col items-center animate-bounce">
         <span className="text-white text-sm mb-2">Scroll Down</span>
         <svg
           className="w-6 h-6 text-white"

@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "../../public/images/Logo-1-nobg.png";
 
+const Logo =
+  "https://ik.imagekit.io/zh57cbpyz/images/Logo-1-nobg_ZTjfuandY.png?updatedAt=1746886125402";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-music-dark py-12 border-t border-gray-800">
@@ -171,9 +172,9 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} Symphony Beats. All rights reserved.
           </p>
 
-          {/* <div className="mt-4 md:mt-0">
+          <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-gray-500 hover:text-gray-300 text-sm"
@@ -188,17 +189,18 @@ const Footer: React.FC = () => {
                 >
                   Terms of Service
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="#"
+                  href="https://www.malhar.fun/"
+                  target="_blank"
                   className="text-gray-500 hover:text-gray-300 text-sm"
                 >
-                  Cookie Policy
+                  by Malhar
                 </a>
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
