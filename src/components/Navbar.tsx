@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import WhatsAppButton from "./WhatsAppButton";
-
+import LazyImage from "./LazyImage";
 interface NavbarProps {
   className?: string;
 }
@@ -42,7 +42,11 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
         <a href="#" className="text-2xl font-bold text-white tracking-tight">
           {/* BEAT<span className="text-music-purple">LIFE</span> */}
           {Logo ? (
-            <img src={Logo} className="h-12 md:h-16 " />
+            <LazyImage
+              src={Logo}
+              className="h-12 md:h-16 "
+              alt="Symphony Beats"
+            />
           ) : (
             <div>
               Symphony<span className="text-music-purple"> Beats</span>

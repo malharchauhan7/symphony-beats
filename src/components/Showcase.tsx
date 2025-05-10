@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
-
+import LazyImage from "./LazyImage";
 const showcaseEvents = [
   {
     id: 1,

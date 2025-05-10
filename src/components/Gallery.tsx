@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-
+import LazyImage from "./LazyImage";
 const galleryImages = [
   {
     id: 1,
@@ -57,7 +57,7 @@ const galleryImages = [
     className: "col-span-2 row-span-1",
   },
   {
-    id: 10,
+    id: 11,
     src: `https://ik.imagekit.io/zh57cbpyz/images/latest-shows/garba_gucjYQVGfv.jpg?updatedAt=1746886135707`,
     alt: "No celebration is complete without Garba!",
     className: "col-span-1 row-span-1",
@@ -87,7 +87,7 @@ const Gallery: React.FC = () => {
                 image.className
               )}
             >
-              <img
+              <LazyImage
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
